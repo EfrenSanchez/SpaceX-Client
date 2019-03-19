@@ -1,0 +1,26 @@
+.nav {
+  padding: var(--space-xl);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.nav__links {
+  margin: auto 10% 0 0;
+}
+
+.nav__link {
+  color: var(--alabaster);
+  font-family: var(--fontText);
+  font-size: var(--fontSize-menu);
+  text-transform: uppercase;
+  text-decoration: none; 
+}
+
+.nav__link:first-child {
+  margin-right: var(--space-xl)
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid var(--alabaster);  
+}

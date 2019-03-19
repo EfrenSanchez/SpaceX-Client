@@ -1,0 +1,138 @@
+.rocket-btnBack {
+  color: var(--alabaster);
+  font-family: var(--fontText);
+  font-size: var(--fontSize-menu);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: var(--space-sm);
+}
+
+.rocket-container {
+  padding: var(--space-xxl);
+  margin-top: var(--space-md);
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr;
+  grid-template-rows: .5fr .5fr 2fr;
+  grid-template-areas:
+    "img title first_flight"
+    "img desc desc"
+    "img overview media";
+}
+
+.bg-dark {
+  background-color: #000000;
+  color: var(--whiteText);
+}
+
+.bg-light {
+  background-color: #CECECE;
+  color: var(--blackText);
+}
+
+.rocket-img {
+  grid-area: img;
+  justify-self: center;
+  height: 70vh;
+}
+
+.rocket-header {
+  grid-area: title
+}
+
+.rocket-title,
+.rocket-first_flight {
+  font-family: var(--fontTitle);
+}
+
+.rocket-title {
+  font-size: var(--fontSize-title);
+  letter-spacing: var(--space-sm);
+  margin-bottom: 0;
+  margin-left:  var(--space-sm);
+}
+
+.rocket-divider__md {
+  padding: 0 100%;
+  border-top: var(--border-md-solid);
+}
+
+.rocket-first_flight {
+  grid-area: first_flight;
+  justify-self: center;
+  font-size: var(--font-subtitle);
+  letter-spacing: var(--space-xs);
+  opacity: .3;
+}
+
+.rocket-description {
+  grid-area: desc;
+  line-height: var(--space-md);
+}
+
+.rocket-overview {
+  grid-area: overview;
+}
+
+.rocket-overview__title {
+  font-family: var(--fontTitle);
+  letter-spacing: var(--space-xs);
+  font-size: var(--font-subtitle);
+}
+
+.rocket-overview__details {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.rocket-overview__details h4 {
+  font-family: var(--fontText);
+  font-size: var(--fontSize-menu);
+  margin-bottom: var(--space-sm);
+}
+
+.rocket-overview__parph {
+  font-family: var(--fontText);
+  font-size: var(--fontSize-menu);
+  margin-top: 0;
+}
+
+.rocket-overview__parph span {
+  margin-left: var(--space-xs);
+  opacity: .6;
+  font-size: var(--fontSize-paragraph);
+}
+
+.rocket-overview__list {
+  font-family: var(--fontText);
+  font-size: var(--fontSize-menu);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.rocket-overview__list span {
+  text-transform: capitalize;
+  margin-left: var(--space-xs);
+}
+
+.rocket-media {
+  grid-area: media;
+  padding: var(--space-sm);
+}
+
+.rocket-wiki {
+  padding: var(--space);
+  text-align: end;
+}
+
+.rocket-wiki a {
+  border: 1px solid var(--alabaster);
+  border-radius: var(--borderRadius-md);
+  background-color: transparent;
+  padding: var(--space-sm);
+  text-decoration: none;
+  color: var(--alabaster);
+  text-shadow: 0px .5px .5px rgba(0,0,0,.5);
+}
